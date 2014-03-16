@@ -1,0 +1,12 @@
+<ion-view title="workout.date|date">
+  <ion-content has-header="true" has-tabs="true">
+
+    <ion-list>
+      <ion-item ng-repeat="(name, session) in sessions" type="item-text-wrap" href="#/sessions/{{ name }}" >
+        <h2>{{ exercises[session.exercise].name }}</h2>
+        <p>{{ session.sets|len }} set</p>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

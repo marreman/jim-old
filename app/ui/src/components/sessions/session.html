@@ -1,0 +1,15 @@
+<ion-view title="exercises[session.exercise].name">
+  <ion-content has-header="true" has-tabs="true">
+
+    <ion-list>
+      <ion-item ng-repeat="(name, set) in session.sets" type="item-text-wrap" ng-click="editSet(name)">
+        <h2>{{ set.reps }} reps – {{ set.weight }} kg</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="editSet()">Nytt set</button>
+    </div>
+
+  </ion-content>
+</ion-view>

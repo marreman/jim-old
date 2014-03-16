@@ -1,0 +1,22 @@
+<div class="modal">
+  <header class="bar bar-header bar-positive">
+    <h1 class="title">Nytt pass</h1>
+    <button class="button button-icon icon ion-close-round" ng-click="modal.hide()"></button>
+  </header>
+  <ion-content has-header="true">
+    <ul class="list">
+      <div class="item item-divider">
+        Välj övningar
+      </div>
+      <li class="item item-checkbox" ng-repeat="exercise in exercises">
+         <label class="checkbox">
+           <input ng-model="exercise.selected" type="checkbox">
+         </label>
+         {{ exercise.name }}
+      </li>
+    </ul>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="createWorkout(workout)">Skapa pass</button>
+    </div>
+  </ion-content>
+</div>

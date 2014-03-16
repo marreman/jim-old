@@ -1,0 +1,15 @@
+<ion-view title="'Övningar'">
+  <ion-content has-header="true" has-tabs="true">
+    <ion-list>
+      <ion-item ng-repeat="(id, exercise) in exercises" type="item-text-wrap" href="#/exercises/{{ id }}">
+        <h2>{{ exercise.name }}</h2>
+        <p>
+            {{ exercise.sessions|len }} pass
+        </p>
+      </ion-item>
+    </ion-list>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="modal.show()">Ny övning</button>
+    </div>
+  </ion-content>
+</ion-view>

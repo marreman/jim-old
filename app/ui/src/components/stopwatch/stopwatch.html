@@ -1,0 +1,11 @@
+<ion-view title="'Stoppur'">
+  <ion-content padding="true" has-header="true" has-tabs="true">
+
+    <h1 class="time">{{ stopwatch.time }}</h1>
+    <button class="button button-block button-positive"
+            ng-click="stopwatch.running = !stopwatch.running">
+     {{ stopwatch.running ? 'Stoppa' : 'Starta' }}</button>
+    <button class="button button-block"
+            ng-click="stopwatch.time = 0.0">Återställ</button>
+  </ion-content>
+</ion-view>

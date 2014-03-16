@@ -1,0 +1,12 @@
+<ion-view title="'Pass'">
+  <ion-content has-header="true" has-tabs="true">
+    <ion-list>
+      <ion-item ng-repeat="(id, workout) in workouts" type="item-text-wrap" href="#/workouts/{{ id }}">
+        <h2>{{ workout.date|date }}</h2>
+      </ion-item>
+    </ion-list>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="modal.show()">Nytt pass</button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+{
+  "name": "train",
+  "version": "0.0.1",
+  "description": "to help with exercise",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-concat": "*"
+  }
+}

@@ -1,0 +1,23 @@
+<div class="modal">
+  <header class="bar bar-header bar-positive">
+    <h1 class="title">{{ exercises[session.exercise].name }} - Set</h1>
+    <button class="button button-icon icon ion-close-round" ng-click="modal.hide()"></button>
+  </header>
+  <ion-content has-header="true" padding="true">
+    <div class="range">
+      Reps <input type="range"
+                 ng-model="set.reps"
+                 min="1"
+                 max="20"
+                 step="1"> {{ set.reps || 0 }}
+    </div>
+    <div class="range">
+      Vikt <input type="range"
+                  ng-model="set.weight"
+                  min="1"
+                  max="100"
+                  step="1"> {{ set.weight || 0 }}
+    </div>
+    <button class="button button-full button-positive" ng-click="editDone()">Klar</button>
+  </ion-content>
+</div>
