@@ -350,7 +350,8 @@
       });
 
       this.login = function () {
-        return simpleLogin.$login('facebook');
+        window.console.log("login");
+        return simpleLogin.$login('anonymous');
       };
     }
   ]);
@@ -387,6 +388,7 @@
   ]);
 
 }(window));
+
 (function (window) {
 
   "use strict";
